@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Sanchez:ital@0;1&family=Sansita+Swashed:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Sanchez:ital@0;1&family=Sofadi+One&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(244, 247, 255);
+}
+
+h1, .brand-name{
+    font-family: "Sofadi One", system-ui;;
+}
+
+h3{
+    font-family: "Cabin", sans-serif;
+    color: #6A9C89;
+}
+
+p, a{
+    font-family: "Sanchez", serif;
+}
+
+
+.navbar{
+    background-color: rgb(223, 241, 255);
+    margin-bottom: 40px;
+}
+
+.brand-name{
+    font-size: 25px;
+}
+
+main{
+    min-height: calc(100vh - 169px - 63.5px);
+}
+
+/* ------------------------------------ INDEX.EJS ------------------------------------ */
+
+main .content{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .card{
+    width: 40rem;
+    margin-bottom: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-title{
+    font-family: "Cabin", sans-serif;
+    color: #0c2591;;
+}
+
+main .content .card:hover{
+    box-shadow: 0px 0px 10px 10px rgb(180, 184, 255);
+}
+
+/* footer {
+    background-color: rgb(223, 241, 255);
+} */
+
+
+
+/* ------------------------------------ PLACE_DETAILS.EJS ------------------------------------ */
+
+.details-container, 
+.about-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-container > *,
+.about-container > *{
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.details-container h1,
+.about-container h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.details-container .image-container{
+    height: calc((80vw * (1.6 / 3)));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: -1px 6px 9px 2px rgb(122, 118, 133);
+}
+
+
+
+/* ------------------------------------ PLACE_DETAILS.EJS ------------------------------------ */
+
+.contact-container{
+    width: 80vw;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc(100vh - 169px - 63.5px);
+}
+
+
+
+
+
+/* ------------------------------------ MEDIA QUERY FOR RESPONSIVE WEBSITE ------------------------------------ */
+
+@media only screen and (max-width:700px) {
+    main .content .card{
+        width: 18rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    p, a, li{
+        font-size: 12px;
+    }
+
+    .nav-item a{
+        padding: 0.2rem 0.5rem;
+    }
+
+    footer ul, footer p{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    main .content .card{
+        width: 15rem;
+    }
+}

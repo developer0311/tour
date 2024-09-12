@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+    <div class="contact-container">
+
+        <form action="https://formspree.io/f/meojwalr"  method="POST">
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+                <input type="text" class="form-control" placeholder="Full name" aria-label="Fullname"
+                    aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" name="user name" class="form-control" placeholder="Valid email" aria-label="User's email"
+                    aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+
+            <div class="mb-3">
+                <label for="basic-url" class="form-label">Your vanity URL</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" name="user-website" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                </div>
+                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+            </div>
+
+            <div class="input-group mb-3">
+                <label for="basic-url" class="form-label">Your valid ID</label>
+                <div class="input-group"></div>
+                <input type="file" name="ID proof" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            </div>
+
+            <div class="input-group mb-5">
+                <span class="input-group-text">With textarea</span>
+                <textarea class="form-control" name="message"aria-label="With textarea"></textarea>
+            </div>
+
+            
+            <div class="input-group">
+                <button type="submit" class="btn btn-success">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>

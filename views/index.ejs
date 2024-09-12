@@ -1,0 +1,26 @@
+<%- include("partials/header.ejs") %>
+
+  <div class="content">
+
+
+    <% places.forEach((place)=> { %>
+      <div class="card">
+        <img src="<%= place.image_link %>" class="card-img-top" alt="<%= place.name %>">
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= place.name %>
+          </h5>
+          <p class="card-text">
+            <%= place.about %>
+          </p>
+          <form action="/view-more" method="GET">
+            <button type="submit" class="btn btn-primary" name="id" value="<%=place.id %>">View More</button>
+          </form>
+        </div>
+      </div>
+      <% }); %>
+
+
+
+  </div>
+  <%- include("partials/footer.ejs") %>

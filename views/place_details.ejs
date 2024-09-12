@@ -1,0 +1,15 @@
+<%- include("partials/header.ejs") %>
+
+<div class="details-container">
+    <h1><%= details[0].name %></h1>
+    <div class="image-container" style="background-image: url('<%= details[0].image_link %>');">
+        
+    </div>
+    <div class="brief-content">
+        <p><%= details[0].more_about %></p>
+    </div>
+    
+</div>
+
+
+<%- include("partials/footer.ejs") %>

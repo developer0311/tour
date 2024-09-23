@@ -11,7 +11,7 @@ DB_PASSWORD=YOUR_PASSWORD
 DB_PORT=5432
 
 
-#------------------------------- POSTGRES DETAILS -------------------------------#
+#------------------------------- GOOGLE AUTH -------------------------------#
 GOOGLE_CLIENT_ID="YOUR GOOGLE CLIENT ID"
 GOOGLE_CLIENT_SECRET="YOUR CLIENT SECRET"
 SESSION_SECRET="TOPSECRETWORD"

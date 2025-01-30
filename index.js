@@ -103,10 +103,10 @@ app.get(
   })
 );
 
-app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
-  // Successful authentication
-  res.redirect('/dashboard');
-});
+// app.get('/auth/google/callback', passport.authenticate('google'), (req, res) => {
+//   // Successful authentication
+//   res.redirect('/dashboard');
+// });
 
 
 app.get(
